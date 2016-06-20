@@ -14,7 +14,7 @@ public class vsshow : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		Show("hero1", "hero2");
+		//Show("hero1", "hero2");
 	}
 	
 	// Update is called once per frame
