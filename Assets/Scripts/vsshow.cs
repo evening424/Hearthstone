@@ -6,6 +6,7 @@ public class vsshow : MonoBehaviour {
 	public static vsshow _instance;
 	void Awake(){
 		_instance = this;
+		this.gameObject.SetActive (false);
 	}
 
 	public TweenScale vsTween;
@@ -23,7 +24,12 @@ public class vsshow : MonoBehaviour {
 	}
 
 	public void Show(string hero1Name , string hero2Name){
+		PlayerPrefs.SetString ("hero1", hero1Name);
+		PlayerPrefs.SetString ("hero2", hero2Name);
+
 		Blankmask._instance.Show ();
+
+		this.gameObject.SetActive (true);
 
 		hero1Tween.GetComponent<UISprite> ().spriteName = hero1Name;
 		hero2Tween.GetComponent<UISprite> ().spriteName = hero2Name;

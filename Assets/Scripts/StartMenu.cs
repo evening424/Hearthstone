@@ -13,6 +13,8 @@ public class StartMenu : MonoBehaviour {
 
 	public TweenPosition selectRoleTween;
 
+	public UISprite hero1;
+
 	// Use this for initialization
 	void Start () {
         movTexture.loop = false;
@@ -24,13 +26,11 @@ public class StartMenu : MonoBehaviour {
     void Update () {
 		if (isDrawMov) {
 			if(Input.GetMouseButtonDown(0)){
-				Debug.Log("1111111111");
 				StopMov();
 			}
 		}
 
 		if (isCanShowSelectRole && Input.GetMouseButtonDown (0)) {
-			Debug.Log("2222222");
 			selectRoleTween.PlayForward ();
 			isCanShowSelectRole = false;
 		}
@@ -53,6 +53,17 @@ public class StartMenu : MonoBehaviour {
 		isCanShowSelectRole = true;
 
 		//selectRoleTween.PlayForward ();
+	}
+
+	public void OnplaybtnClick(){
+		Blankmask._instance.Show ();
+		vsshow._instance.Show (hero1.spriteName, "hero" + Random.Range (1, 10));
+		StartCoroutine (LoadPlayScreen ());
+	}
+
+	IEnumerator LoadPlayScreen(){
+		yield return new WaitForSeconds (3f);
+		Application.LoadLevel (1);
 	}
 
 }
