@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\HistoryCard.cs" />
      <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\EquipItems.cs" />
      <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\EquipRandomItem.cs" />
      <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\UICursor.cs" />
@@ -184,7 +185,17 @@
      <Compile Include="Assets\Scripts\HeroSelect.cs" />
      <Compile Include="Assets\Scripts\StartMenu.cs" />
      <Compile Include="Assets\Scripts\vsshow.cs" />
+     <Compile Include="Assets\btnEnd.cs" />
+     <Compile Include="Assets\hero1.cs" />
      <Compile Include="Assets\hero1_crystal.cs" />
+     <Compile Include="Assets\hero2.cs" />
+     <Compile Include="Assets\iTweenEditor\Examples\StartAndStopTween.cs" />
+     <Compile Include="Assets\iTweenEditor\Helper Classes\EventParamMappings.cs" />
+     <Compile Include="Assets\iTweenEditor\Helper Classes\Vector3OrTransform.cs" />
+     <Compile Include="Assets\iTweenEditor\Helper Classes\Vector3OrTransformArray.cs" />
+     <Compile Include="Assets\iTweenEditor\iTween.cs" />
+     <Compile Include="Assets\iTweenEditor\iTweenEvent.cs" />
+     <Compile Include="Assets\iTweenEditor\iTweenPath.cs" />
      <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth Cutout.shader" />
      <None Include="Assets\NGUI\ReadMe - 3.6.0.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 2.shader" />
@@ -198,6 +209,7 @@
      <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo18.txt" />
      <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Header.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 1.shader" />
+     <None Include="Assets\iTweenEditor\README.txt" />
      <None Include="Assets\NGUI\Examples\Atlases\Fantasy\Fantasy Font - Normal.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 3.shader" />
      <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Normal.txt" />
